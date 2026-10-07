@@ -1,0 +1,9 @@
+{
+    "cwe_code": "078-ExecTainted",
+    "project_name": "example-project",
+    "analysis_path": "/path/to/ai-analysis/sourcecode%",
+    "function_csv": "/path/to/ai-analysis/cache/example-project_functionlist.csv",
+    "source_path": "/path/to/ai-analysis/sourcecode",
+    "db_path": "/path/to/ai-analysis/cache/example-project_codeql_analysis.db",
+    "codeql_db_path": "/path/to/codeql-db"
+}

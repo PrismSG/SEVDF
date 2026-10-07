@@ -1,0 +1,14 @@
+{
+    "selected_model": "gpt-oss-120b",
+    "api_key": "YOUR_OPENAI_API_KEY",
+    "azure_key": "",
+    "azure_endpoint": "",
+    "siliconflow_key": "",
+    "ds_azure_key": "",
+    "ds_azure_endpoint": "",
+    "openrouter_api_key": "",
+    "max_tokens": 8192,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "stop_sequences": []
+}

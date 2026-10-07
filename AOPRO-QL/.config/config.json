@@ -1,0 +1,14 @@
+{
+    "selected_model": "",
+    "api_key": "",
+    "azure_key": "",
+    "azure_endpoint": "",
+    "siliconflow_key": "",
+    "ds_azure_key": "",
+    "ds_azure_endpoint": "",
+    "openrouter_api_key": "",
+    "max_tokens": 8192,
+    "temperature": 0.1,
+    "top_p": 1.0,
+    "stop_sequences": ["\n"]
+}

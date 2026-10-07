@@ -1,0 +1,18 @@
+# Copy to YOUR-MODULE.yaml in your local scanner configuration directory.
+# Replace the metadata and query path with your own values before building.
+metadata:
+  cwe_code: YOUR-MODULE
+  cwe_name: Your detector name
+  description: Your detector description
+  severity: warning
+  enabled: true
+query:
+  source: local
+  ql_source_path: /absolute/path/to/your/query.ql
+  codeql_lib_source: /absolute/path/to/your/codeql-library
+  library_mode: symlink
+  # Keys are module paths within the generated pack; values are local files.
+  ql_dependencies: {}
+analysis:
+  compression_level: 0
+  cpu_threads: 2

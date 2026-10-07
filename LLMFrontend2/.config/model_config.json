@@ -1,0 +1,202 @@
+{
+    "models": {
+        "gpt-4o": {
+            "provider": "openai",
+            "model_name": "gpt-4o",
+            "max_tokens": 8192,
+            "description": "OpenAI GPT-4o model"
+        },
+        "gpt-3.5-turbo": {
+            "provider": "openai",
+            "model_name": "gpt-3.5-turbo",
+            "max_tokens": 4096,
+            "description": "OpenAI GPT-3.5 Turbo model"
+        },
+        "azure-gpt4o": {
+            "provider": "azure",
+            "model_name": "gpt-4o",
+            "deployment_name": "caozong-exp",
+            "api_version": "2024-08-01-preview",
+            "max_tokens": 8192,
+            "description": "Azure OpenAI GPT-4o deployment"
+        },
+        "deepseek-v2.5": {
+            "provider": "siliconflow",
+            "model_name": "deepseek-ai/DeepSeek-V2.5",
+            "max_tokens": 4096,
+            "description": "DeepSeek V2.5 model via SiliconFlow"
+        },
+        "deepseek-v3": {
+            "provider": "siliconflow",
+            "model_name": "Pro/deepseek-ai/DeepSeek-V3",
+            "max_tokens": 4096,
+            "description": "DeepSeek V3 model via SiliconFlow"
+        },
+        "deepseek-r1": {
+            "provider": "siliconflow",
+            "model_name": "Pro/deepseek-ai/DeepSeek-R1",
+            "max_tokens": 8192,
+            "description": "DeepSeek R1 model via SiliconFlow"
+        },
+        "azure-deepseek-r1": {
+            "provider": "azure-deepseek",
+            "model_name": "DeepSeek-R1",
+            "deployment_name": "deepseek-r1",
+            "api_version": "2024-05-01-preview",
+            "max_tokens": 8192,
+            "description": "Azure DeepSeek R1 deployment"
+        },
+        "openrouter-deepseek-r1": {
+            "description": "OpenRouter Model",
+            "provider": "openrouter",
+            "model_name": "deepseek/deepseek-r1",
+            "max_tokens": 163840,
+            "api_version": "v1",
+            "openrouter_provider": {
+                "order": ["Anthropic", "Fireworks"],
+                "allow_fallbacks": true,
+                "sort": "throughput",
+                "ignore": ["Meta"],
+                "require_parameters": false
+            }
+        },
+        "qwq-32b": {
+            "provider": "openrouter",
+            "model_name": "qwen/qwq-32b",
+            "max_tokens": 100000,
+            "description": "QwQ 32B model",
+            "api_version": "v1",
+            "tool_call_format": "xml_tags",
+            "openrouter_provider": {
+                "order": ["Hyperbolic"],
+                "allow_fallbacks": true
+            },
+            "reasoning": {
+                "effort": "high",
+                "exclude": true
+            }
+        },
+        "qwen-32b": {
+            "provider": "openrouter",
+            "model_name": "qwen/qwen3-32b",
+            "max_tokens": 100000,
+            "description": "Qwen3 32B model via Cerebras",
+            "api_version": "v1",
+            "tool_call_format": "xml_tags",
+            "openrouter_provider": {
+                "order": ["Cerebras"],
+                "allow_fallbacks": true
+            },
+            "reasoning": {
+                "effort": "high",
+                "exclude": true
+            }
+        },
+        "gpt-4.1": {
+            "provider": "openai",
+            "model_name": "gpt-4.1",
+            "max_tokens": 8192,
+            "description": "GPT-4.1 model"
+        },
+        "gemini-2.0-flash-lite-preview": {
+            "provider": "openrouter",
+            "model_name": "google/gemini-2.0-flash-lite-preview-02-05:free",
+            "max_tokens": 1000000,
+            "description": "Gemini 2.0 Flash Lite Preview model",
+            "openrouter_provider": {
+                "order": ["Google"],
+                "allow_fallbacks": false,
+                "data_collection": "disallow"
+            }
+        },
+        "gpt-oss-120b": {
+            "provider": "openrouter",
+            "model_name": "openai/gpt-oss-120b",
+            "max_tokens": 16384,
+            "description": "GPT OSS 120B model via OpenRouter with Google Vertex",
+            "openrouter_provider": {
+                "order": ["google-vertex"],
+                "allow_fallbacks": false
+            }
+        },
+        "gpt-oss-20b": {
+            "provider": "openrouter",
+            "model_name": "openai/gpt-oss-20b",
+            "max_tokens": 16384,
+            "description": "GPT OSS 20B model via OpenRouter with Google Vertex",
+            "openrouter_provider": {
+                "order": ["google-vertex"],
+                "allow_fallbacks": false
+            }
+        },
+        "claude-sonnet-4.5": {
+            "provider": "openrouter",
+            "model_name": "anthropic/claude-sonnet-4.5",
+            "max_tokens": 8192,
+            "description": "Claude Sonnet 4.5 model via OpenRouter",
+            "openrouter_provider": {
+                "order": ["Anthropic"],
+                "allow_fallbacks": false
+            }
+        },
+        "glm-4.7-flash": {
+            "provider": "openrouter",
+            "model_name": "z-ai/glm-4.7-flash",
+            "max_tokens": 8192,
+            "description": "GLM-4.7 Flash model via OpenRouter",
+            "openrouter_provider": {
+                "allow_fallbacks": true
+            }
+        },
+        "glm-4.7": {
+            "provider": "openrouter",
+            "model_name": "z-ai/glm-4.7",
+            "max_tokens": 8192,
+            "description": "GLM-4.7 model via OpenRouter",
+            "openrouter_provider": {
+                "allow_fallbacks": true
+            }
+        },
+        "minimax-m2.1": {
+            "provider": "openrouter",
+            "model_name": "minimax/minimax-m2.1",
+            "max_tokens": 8192,
+            "description": "MiniMax M2.1 model via OpenRouter",
+            "openrouter_provider": {
+                "allow_fallbacks": true
+            }
+        },
+        "qwen3-next-80b": {
+            "provider": "openrouter",
+            "model_name": "qwen/qwen3-next-80b-a3b-thinking",
+            "max_tokens": 16384,
+            "description": "Qwen3 Next 80B A3B Thinking model via OpenRouter",
+            "openrouter_provider": {
+                "allow_fallbacks": true
+            },
+            "reasoning": {
+                "effort": "high",
+                "exclude": true
+            }
+        }
+    },
+    "provider_configs": {
+        "openai": {
+            "base_url": "https://api.openai.com/v1",
+            "requires": ["api_key"]
+        },
+        "azure": {
+            "requires": ["azure_key", "azure_endpoint"]
+        },
+        "siliconflow": {
+            "base_url": "https://api.siliconflow.cn/v1",
+            "requires": ["siliconflow_key"]
+        },
+        "azure-deepseek": {
+            "requires": ["ds_azure_key", "ds_azure_endpoint"]
+        },
+        "openrouter": {
+            "requires": ["openrouter_api_key"]
+        }
+    }
+} 

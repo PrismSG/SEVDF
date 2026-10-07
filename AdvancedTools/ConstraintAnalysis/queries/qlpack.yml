@@ -1,0 +1,4 @@
+name: constraint-analysis-queries
+version: 1.0.0
+dependencies:
+  codeql/cpp-all: "*"

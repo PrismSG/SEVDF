@@ -1,0 +1,32 @@
+# SEVDF Requirements
+# Core dependencies for the entire project
+
+# Basic Python dependencies (with version constraints)
+colorama==0.4.6
+requests==2.31.0
+pydantic==1.10.13
+
+# LLM API clients (pin specific versions)
+openai==1.64.0
+anthropic==0.47.1
+
+# Data processing
+numpy>=1.24.0  # For uniform interval sampling in SARIF processing
+
+# Visualization libraries (for statistics generation in batch mode)
+matplotlib>=3.7.0
+seaborn>=0.12.0
+pandas>=2.0.0
+
+# Configuration
+pyyaml>=6.0
+
+# JSON repair (for recovering malformed LLM tool call arguments)
+json-repair>=0.7.0
+
+# Program analysis and code lookup
+dill>=0.3.0  # For CFG Manager
+docker==6.1.3  # For OpenGrok Docker integration (pin specific version)
+tqdm
+networkx
+graphviz
